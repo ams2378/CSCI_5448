@@ -37,11 +37,11 @@ $ java Test
   | Methods        | Description           |
   | ------------- |:-------------:|
   | getName()      | Add a new ```Shape``` in the collection |
-  | getX(), getY(), getZ()      | Sort the collection by X/Y/Z. The args should be one hot      |
+  | getX(), getY(), getZ()      | return X/Y/Z co-ordinate      |
   | diplay() | display the attributes (location xyz)      |
 
 
-- ```Square```, ```Triangle```, ```Circle``` : Derived classes from ```Shape```  
+- ```Square```, ```Triangle```, ```Circle``` : Derived classes from ```Shape```. 
 - ```Collection``` : Class to hold a collection of ```Shape```-s'. Implements following methods:  
 
   | Methods        | Description           |
