@@ -38,7 +38,7 @@ $ java Test
   | ------------- |:-------------:|
   | getName()      | return the name of the shape |
   | getX(), getY(), getZ()      | return X/Y/Z co-ordinate      |
-  | diplay() | display the attributes (location xyz)      |
+  | display() | display the attributes (location xyz)      |
 
 
 - ```Square```, ```Triangle```, ```Circle``` : Derived classes from ```Shape```. 
@@ -48,7 +48,7 @@ $ java Test
   | ------------- |:-------------:|
   | add()      | Add a new ```Shape``` in the collection |
   | sort(sortByX, sortByY, sortByZ)      | Sort the collection by X/Y/Z. The args should be one hot      |
-  | diplay() | display the sorted Shapes      |
+  | display() | display the sorted Shapes      |
 
 - ```XComparator```, ```YComparator```, ```ZComparator```: Class implements ```Comparator<T>``` interface. Used to sort the shapes.
 - ```Test```: A test class. (self explanatory). 
