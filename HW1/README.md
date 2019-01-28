@@ -33,15 +33,23 @@ $ java Test
 
 **Classes**:  
 - ```Shape``` : Abstract class with following methods:  
-*getName()* : Returns the name of object  
-*getX(), getY(), getZ()* : get X,Y,Z co-ordinates (location of the shape on screen)  
-*display()* : display the attributes (location xyz)  
+
+  | Methods        | Description           |
+  | ------------- |:-------------:|
+  | getName()      | Add a new ```Shape``` in the collection |
+  | getX(), getY(), getZ()      | Sort the collection by X/Y/Z. The args should be one hot      |
+  | diplay() | display the attributes (location xyz)      |
+
 
 - ```Square```, ```Triangle```, ```Circle``` : Derived classes from ```Shape```  
 - ```Collection``` : Class to hold a collection of ```Shape```-s'. Implements following methods:  
-*add()* : Add a new ```Shape``` in the collection  
-*sort(sortByX, sortByY, sortByZ)* : Sort the collection by X/Y/Z. The args should be one hot  
-*diplay()* : display the sorted Shapes  
+
+  | Methods        | Description           |
+  | ------------- |:-------------:|
+  | add()      | Add a new ```Shape``` in the collection |
+  | sort(sortByX, sortByY, sortByZ)      | Sort the collection by X/Y/Z. The args should be one hot      |
+  | diplay() | display the sorted Shapes      |
+
 - ```XComparator```, ```YComparator```, ```ZComparator```: Class implements ```Comparator<T>``` interface. Used to sort the shapes.
 - ```Test```: A test class. (self explanatory). 
 
