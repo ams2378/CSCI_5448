@@ -36,7 +36,7 @@ $ java Test
 
   | Methods        | Description           |
   | ------------- |:-------------:|
-  | getName()      | Add a new ```Shape``` in the collection |
+  | getName()      | return the name of the shape |
   | getX(), getY(), getZ()      | return X/Y/Z co-ordinate      |
   | diplay() | display the attributes (location xyz)      |
 
