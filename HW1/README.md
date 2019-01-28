@@ -26,8 +26,10 @@ to.*
 **Team Members** : Adil Sadik
 
 **Compile & run instruction** :  
-  $ javac Shape.java Square.java Circle.java Triangle.java Collection.java XComparator.java YComparator.java ZComparator.java Test.java  
-  $ java Test
+```
+$ javac Shape.java Square.java Circle.java Triangle.java Collection.java XComparator.java YComparator.java ZComparator.java Test.java  
+$ java Test
+```
 
 **Classes**:  
 - Shape : Abstract class with following methods:  
