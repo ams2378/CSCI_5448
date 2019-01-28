@@ -46,3 +46,36 @@ to.*
 **Reference**:
   - Used concept from following site to implement comparator  
   https://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/
+  
+  
+**Sample output**:
+```
+$ javac Shape.java Square.java Circle.java Triangle.java Collection.java XComparator.java YComparator.java ZComparator.java Test.java
+$ java Test
+------------------------------------------------------
+Type   of Shape : square
+Number of Shape : 3
+Sorted by Y co-ordinate
+[ Location (x, y, z) = (10, 1, 1) width : 1 length : 1 ]
+[ Location (x, y, z) = (2, 2, 1) width : 1 length : 1 ]
+[ Location (x, y, z) = (1, 32, 1) width : 1 length : 1 ]
+------------------------------------------------------
+Type   of Shape : circle
+Number of Shape : 4
+Sorted by X co-ordinate
+[ Location (x, y, z) = (1, 1, 1) radius : 1 ]
+[ Location (x, y, z) = (10, 1, 1) radius : 1 ]
+[ Location (x, y, z) = (20, 1, 1) radius : 1 ]
+[ Location (x, y, z) = (100, 1, 1) radius : 1 ]
+------------------------------------------------------
+Type   of Shape : triangle
+Number of Shape : 6
+Shapes not sorted
+[ Location (x, y, z) = (10, 20, 3) height : 3 base : 4 ]
+[ Location (x, y, z) = (9, 21, 30) height : 3 base : 4 ]
+[ Location (x, y, z) = (17, 12, 13) height : 3 base : 4 ]
+[ Location (x, y, z) = (90, 2, 1) height : 3 base : 4 ]
+[ Location (x, y, z) = (1, 2, 30) height : 4 base : 4 ]
+[ Location (x, y, z) = (100, 15, 3) height : 11 base : 4 ]
+------------------------------------------------------
+```
