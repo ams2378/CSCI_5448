@@ -1,22 +1,22 @@
 class Shape(object):
 
   	def __init__(self, name, nx, ny, nz):
-  		self.name = name
-  		self.x = nx
-  		self.y = ny
-  		self.z = nz
+  		self._name = name
+  		self._x = nx
+  		self._y = ny
+  		self._z = nz
 
 	def getName(self):
-		return self.name
+		return self._name
 
 	def getX(self):
-		return self.x
+		return self._x
 
 	def getY(self):
-		return self.y
+		return self._y
 
 	def getZ(self):
-		return self.z
+		return self._z
 
 	def display(self):
-		print ("[ Location (x, y, z) = (" + str(self.x) + ", " + str(self.y) + ", " + str(self.z) + ") ]")
+		print ("[ Location (x, y, z) = (" + str(self._x) + ", " + str(self._y) + ", " + str(self._z) + ") ]")

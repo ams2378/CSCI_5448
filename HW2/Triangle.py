@@ -4,9 +4,9 @@ class Triangle (Shape):
 
   	def __init__(self, nx, ny, nz, nh, nb):
   		super(Triangle, self).__init__("triangle", nx, ny, nz)
-  		self.h = nh
-  		self.b = nb
+  		self._h = nh
+  		self._b = nb
 
 	def display(self):
 		super(Triangle, self).display()
-		print("[ height : " + str(self.h) + " base : " + str(self.b) + " ]")
+		print("[ height : " + str(self._h) + " base : " + str(self._b) + " ]")

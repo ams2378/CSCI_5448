@@ -7,38 +7,38 @@ from Triangle import *
 class Collection:
 
 	def __init__ (self):
-		self.numShapes = 0;
-		self.shapes = []
-		self.sortX = False
-		self.sortY = False
-		self.sortZ = False
+		self._numShapes = 0;
+		self._shapes = []
+		self._sortX = False
+		self._sortY = False
+		self._sortZ = False
 
 	def add (self, item):
-		self.numShapes = self.numShapes+1
-		self.shapes.append(item)
+		self._numShapes = self._numShapes+1
+		self._shapes.append(item)
 
 	def sort (self, nsortX, nsortY, nsortZ):
-		self.sortX = nsortX;
-		self.sortY = nsortY;
-		self.sortZ = nsortZ;
+		self._sortX = nsortX;
+		self._sortY = nsortY;
+		self._sortZ = nsortZ;
 
-		if (self.sortX): 
-			self.shapes = sorted(self.shapes, key=lambda shape: shape.getX())
-		if (self.sortY): 
-			self.shapes = sorted(self.shapes, key=lambda shape: shape.getY())
-		if (self.sortZ): 
-			self.shapes = sorted(self.shapes, key=lambda shape: shape.getZ())
+		if (self._sortX): 
+			self._shapes = sorted(self._shapes, key=lambda shape: shape.getX())
+		if (self._sortY): 
+			self._shapes = sorted(self._shapes, key=lambda shape: shape.getY())
+		if (self._sortZ): 
+			self._shapes = sorted(self._shapes, key=lambda shape: shape.getZ())
 
 	def displaySortOrder(self):
-		if (self.sortX):	
+		if (self._sortX):	
 			print ("Sorted by X co-ordinate"); 
-		if (self.sortY):
+		if (self._sortY):
 			print ("Sorted by Y co-ordinate"); 
-		if (self.sortZ):
+		if (self._sortZ):
 			print ("Sorted by Z co-ordinate"); 			
 
 	def display(self):
-		print ("Type of Shape : " + self.shapes[0].getName())
+		print ("Type of Shape : " + self._shapes[0].getName())
 		self.displaySortOrder()
-		for i in self.shapes:
+		for i in self._shapes:
 			i.display()
