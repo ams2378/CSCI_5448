@@ -8,6 +8,11 @@ README file.*
 
 **Team Members** : Adil Sadik
 
+**What's new** :
+A new method to find out the total area of a shape is added in the base class. As base is class
+is abstruct, the implementation of area isn't provided. The derived class will be responsible to 
+implement this area method. 
+
 **Compile & run instruction** :  
 ```
 $ python Test.py  
