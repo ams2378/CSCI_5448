@@ -1,4 +1,3 @@
-
 from Shape import *
 from Circle import *
 from Square import *
@@ -31,14 +30,19 @@ class Collection:
 
 	def displaySortOrder(self):
 		if (self._sortX):	
-			print ("Sorted by X co-ordinate"); 
+			print ("Sorted by X co-ordinate")
 		if (self._sortY):
-			print ("Sorted by Y co-ordinate"); 
+			print ("Sorted by Y co-ordinate") 
 		if (self._sortZ):
-			print ("Sorted by Z co-ordinate"); 			
+			print ("Sorted by Z co-ordinate") 			
 
 	def display(self):
+		print ("--------------------------------------------------------------------")
 		print ("Type of Shape : " + self._shapes[0].getName())
 		self.displaySortOrder()
 		for i in self._shapes:
 			i.display()
+
+	def displayArea(self):
+		for i in self._shapes:
+			print ("area : " + str(i.getArea()))

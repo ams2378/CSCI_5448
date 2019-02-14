@@ -13,6 +13,9 @@ cirCollection.add(Circle(0, 1, 1, 1))
 cirCollection.sort(True,False,False);
 cirCollection.display() 
 
+# Uncomment to find out the area
+#cirCollection.displayArea()
+
 sqCollection = Collection()
 sqCollection.add(Square(10,100,2,12,13))
 sqCollection.add(Square(10,1,2,12,13))
@@ -22,6 +25,7 @@ sqCollection.add(Square(10,51,2,12,13))
 sqCollection.add(Square(10,10,2,12,13))
 sqCollection.sort(False, True, False)
 sqCollection.display()
+#sqCollection.displayArea()
 
 
 triCollection = Collection()
@@ -35,3 +39,4 @@ triCollection.add(Triangle(10,100,0,12,13))
 triCollection.add(Triangle(10,100,2,12,13))
 triCollection.sort(False, False, True)
 triCollection.display()
+#triCollection.displayArea();

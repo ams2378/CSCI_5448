@@ -6,6 +6,9 @@ class Circle (Shape):
   		super(Circle, self).__init__("circle", nx, ny, nz)
   		self._r = nr
 
+  	def getArea(self):
+  		return 3.1416*self._r * self._r;
+
 	def display(self):
 		super(Circle, self).display()
 		print("[ radius : " + str(self._r) + " ]")
