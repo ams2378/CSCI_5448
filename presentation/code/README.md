@@ -3,3 +3,9 @@ https://www.verificationguide.com/p/uvm-testbench-example.html
 
 The code can be run using following online website:
 https://www.edaplayground.com/x/twb
+
+**UML Diagram of the test bench**
+
+The classes in green represents the UVM base class
+
+![alt text](https://i.imgur.com/ckx7jG1.png)
