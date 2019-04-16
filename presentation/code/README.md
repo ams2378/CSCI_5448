@@ -8,4 +8,4 @@ https://www.edaplayground.com/x/twb
 
 The classes in green represents the UVM base class
 
-![alt text](https://i.imgur.com/ckx7jG1.png)
+![alt text](https://github.com/ams2378/CSCI_5448/blob/master/presentation/code/UML.png?raw=true)
