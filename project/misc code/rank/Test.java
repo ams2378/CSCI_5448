@@ -11,11 +11,11 @@ public class Test {
         String jsonStr = null;
     	
     	jsonStr = "{\"database\":["
-    			+ "{\"name\":\"Vernice\",\"rank\":4},"
-    			+ "{\"name\":\"Marylou\",\"rank\":1},"
-    			+ "{\"name\":\"Renate\",\"rank\":13},"
-    			+ "{\"name\":\"Gayle\",\"rank\":3},"
-    			+ "{\"name\":\"Kim\",\"rank\":7}]}";
+    			+ "{\"name\":\"Vernice\",\"score\":4},"
+    			+ "{\"name\":\"Marylou\",\"score\":1},"
+    			+ "{\"name\":\"Renate\",\"score\":13},"
+    			+ "{\"name\":\"Gayle\",\"score\":3},"
+    			+ "{\"name\":\"Kim\",\"score\":7}]}";
     	
         if (jsonStr != null) {
         	System.out.println("Started Sorting process");
@@ -26,8 +26,8 @@ public class Test {
             	
                 for (int i = 0; i < sortedArray.length(); i++) {
                 	JSONObject c = sortedArray.getJSONObject(i);
-                	Integer id = c.getInt("rank");
-                	System.out.println("rank : " + id);
+                	Integer id = c.getInt("score");
+                	System.out.println("score : " + id);
                 }
             	
             } catch (final JSONException e) {

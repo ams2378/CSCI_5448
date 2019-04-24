@@ -15,8 +15,8 @@ public class SortedByItem implements Comparator<JSONObject> {
 	    @Override
 	    public int compare(JSONObject lhs, JSONObject rhs) {
 	        try {
-	            return lhs.getInt("rank") > rhs.getInt("rank") ? 1 : (lhs
-	                .getInt("rank") < rhs.getInt("rank") ? -1 : 0);
+	            return lhs.getInt("score") > rhs.getInt("score") ? -1 : 
+	            	  (lhs.getInt("score") < rhs.getInt("score") ? 1 : 0);
 	        } catch (JSONException e) {
 	            e.printStackTrace();
 	        }
